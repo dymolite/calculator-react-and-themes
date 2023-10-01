@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.App {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-color);
+  height: 100vh;
+  --background-color: #fff;
+  --background-color-2: #262626;
+  --text-color: #262626;
+  --text-color-2: #fff;
+  --primary-color: #005DB2;
+  --secondary-color: #1991FF;
+  --tertiary-color: #424242;
+  --light-dark-blue: #badcfc;
+  transition: .25s;
+}
+.App.dark {
+  --background-color: #262626;
+  --background-color-2: #fff;
+  --text-color: #262626;
+  --text-color-2: #fff;
+  --primary-color: #1991FF;
+  --secondary-color: #005DB2;
+  --tertiary-color: #cac9c9;
+  --light-dark-blue: #004b91;
+}
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.App .change-modes {
+  background-color: var(--background-color-2);
+  color: var(--light-dark-blue);
+  position: absolute;
+  padding: 10px 15px;
+  top: 10px;
+  right: 15px;
+  border-radius: 6px;
+}
+.calculator {
+  width: 20%;
+  margin-top: 5rem;
+  background-color: var(--background-color-2);
+  padding: 1rem;
+  border-radius: 10px;
+  height: 470px;
+}
+
+.btn {
+  background-color: var(--tertiary-color);
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--light-dark-blue);
+  font-size: 16px;
+  cursor: pointer;
+  transition: .3s;
+}
+.input-outputs {
+  padding: 15px;
+  color: var(--light-dark-blue);
+  font-size: 18px;
+  height: 150px;
+  background-color: var(--background-color-2);
+}
+.inputs {
+  display: block;
+  font-size: 18px;
+}
+.output {
+  display: block;
+  font-size: 26px;
+  color: var(--secondary-color);
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--text-color-2);
+}
+.btn-primary:hover, .btn-secondary:hover {
+  color: var(--text-color-2);
+}
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--text-color-2);
+}
